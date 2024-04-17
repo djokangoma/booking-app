@@ -7,6 +7,8 @@ export default function Header() {
      <div>
       <Logo/>
       <HeaderNnav/>
+      <button>Sign in</button>
+      <button>Sign up</button>
      </div>
   )
 }
