@@ -1,7 +1,12 @@
-import React from 'react'
+import HeaderNnav from "./header-nav";
+import Logo from "./logo";
+
 
 export default function Header() {
   return (
-<p>hhhh</p>
+     <div>
+      <Logo/>
+      <HeaderNnav/>
+     </div>
   )
 }
