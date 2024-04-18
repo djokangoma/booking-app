@@ -5,7 +5,7 @@ import FooterSocial from "./footer-social";
 
 export default function Footer() {
   return (
-    <div>
+    <div className="flex justify-between">
         <FooterAbout/>
         <FooterContact/>
         <FooterPayement/>
