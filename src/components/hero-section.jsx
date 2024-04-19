@@ -3,15 +3,14 @@
 export default function HeroSection() {
   return (
    <div>
-    <div><h2>image</h2></div>
-    <div className="flex justify-between">
-        <div>
-          <h2>WHERE ARE YOU GOING?</h2>
-          <button></button>
+    <div> <img src="https://res.cloudinary.com/dgkxaq4lh/image/upload/v1713536297/xlpp4gqbjbteygvx2olk.jpg" alt="hero-image" /> </div>
+    <div className="flex justify-between  w-30px h-28 bg-[#FAF9F5] ">
+        <div className=" ">
+          <h2>PLACE</h2>
+          <input type="text" className="block text-gray-900" placeholder="where are you going?" /> 
         </div>
-        <div>
-          <h2>DATE</h2>
-          <button>date</button>
+        <div >
+        <button  className="text-[#4d4d4d] border-2  w-40 h-12 ">where are you going?</button>
         </div>
         <div>
           <h2>ROOMS</h2>

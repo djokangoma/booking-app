@@ -6,14 +6,14 @@ export default function Header() {
     <header className="flex justify-between w-full">
       <h1>logo</h1>
       <div className="flex gap-5 list-none">
-        <li>home</li>
-        <li>rooms</li>
-        <li>pages</li>
-        <li>contact</li>
+        <li>HOME</li>
+        <li>ROOMS</li>
+        <li>PAGES</li>
+        <li>CONTACT</li>
       </div>
       <div className="flex gap-5">
-      <button>Sign in</button>
-      <button>Sign up</button>
+      <button>SIGN IN</button>
+      <button>SIGN UP</button>
       </div>
      </header>
   )
