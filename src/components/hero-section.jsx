@@ -30,7 +30,7 @@ export default function HeroSection() {
         </div>
         <div>
           
-          <button className="w-32 border-2 border-neutral-900">BOOK NOW</button>
+          <button className="mt-1 px-3 py-2 bg-white border m-20">BOOK NOW</button>
         </div>
 
         
