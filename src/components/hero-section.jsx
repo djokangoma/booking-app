@@ -5,7 +5,7 @@ export default function HeroSection() {
    <div>
     
      <div>
-       <img src="https://res.cloudinary.com/dgkxaq4lh/image/upload/v1713536297/xlpp4gqbjbteygvx2olk.jpg" alt="hero-image" /> 
+       <img src="https://i.ibb.co/34xMXZn/hero-img.jpg" alt="hero-image" /> 
       </div>
 
       <div className="flex justify-between  w-30px h-28 bg-[#FAF9F5] ">
