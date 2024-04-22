@@ -4,7 +4,7 @@ export default function HeroSection() {
   return (
    <div>
     
-     <div>
+     <div className="w-full">
        <img src="https://i.ibb.co/34xMXZn/hero-img.jpg" alt="hero-image" /> 
       </div>
 

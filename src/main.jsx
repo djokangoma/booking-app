@@ -5,6 +5,7 @@ import Layout from './components/layout.jsx'
 import { createBrowserRouter, RouterProvider  } from 'react-router-dom'
 import Contact from './pages/contact.jsx'
 import Section from './components/section.jsx'
+import SignIn from './pages/sign-in.jsx'
 
 const router = createBrowserRouter([
   {
@@ -13,14 +14,19 @@ const router = createBrowserRouter([
 
     children: [
       {
-        path:"/",
+        path:"home",
         element:<Section/>
       },
       {
         
         path:"/contact",
         element:<Contact/>
-      }
+      },
+      {
+        
+        path:"/sign in",
+        element:<SignIn/>
+      },
     ]
   }
 ])

@@ -11,7 +11,7 @@ export default function Header() {
         <Link to="CONTACT"><li  className="hover:text-[#b56953]">  CONTACT</li></Link>
       </div>
       <div className="flex gap-5">
-      <button className="hover:text-[#b56953]">SIGN IN</button>
+     <Link to="SIGN IN"> <button className="hover:text-[#b56953]"> SIGN IN</button></Link>
       </div>
      </header>
   )
