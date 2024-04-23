@@ -1,5 +1,5 @@
 
-export default function SignIn() {
+export default function Login() {
   return (
     <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
@@ -50,7 +50,8 @@ export default function SignIn() {
                   type="password"
                   autoComplete="current-password"
                   required
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 pl-4"
+                  placeholder=" password"
                 />
               </div>
             </div>
@@ -62,17 +63,14 @@ export default function SignIn() {
               >
                 LOGIN
               </button>
+              <span>
+                
+              </span>
             </div>
           </form>
           
-          <h2> DON'T HAVE AN ACCOUNT ?</h2> <h2 className="text-[#b56953] hover:text-[#f07857]">REGISTER</h2> 
-
-          <p className="mt-10 text-center text-sm text-[#b56953] hover:text-[#f07857]">
-            Not a member?{' '}
-            <a href="#" className="font-semibold leading-6  text-[#b56953] hover:text-[#f07857]">
-              Start a 14 day free trial
-            </a>
-          </p>
+          <h2> DON'T HAVE AN ACCOUNT ?</h2> 
+          <h2 className="text-[#b56953] hover:text-[#f07857]"><link to="/REGISTER">REGISTER</link></h2>
         </div>
       </div>
   )

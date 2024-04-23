@@ -5,13 +5,15 @@ import Layout from './components/layout.jsx'
 import { createBrowserRouter, RouterProvider  } from 'react-router-dom'
 import Contact from './pages/contact.jsx'
 import Section from './components/section.jsx'
-import SignIn from './pages/sign-in.jsx'
+import Login from './pages/login.jsx'
+import Errorpage from './pages/errorpage.jsx'
+
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout />,
-
+    errorElement: <Errorpage/>,
     children: [
       {
         path:"/home",
@@ -24,9 +26,17 @@ const router = createBrowserRouter([
       },
       {
         
-        path:"/sign in",
-        element:<SignIn/>
+        path:"/login",
+        element:<Login/>
       },
+      // {
+      //   path:"/sign in",
+      //   element:<SignIn/>,
+      //   children : [
+      //     path: "/sign in/registrer",
+      //     element: <Register/>,
+      //   ]
+      // },
     ]
   }
 ])
