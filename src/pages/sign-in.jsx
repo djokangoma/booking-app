@@ -26,8 +26,8 @@ export default function SignIn() {
                   type="email"
                   autoComplete="email"
                   required
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  placeholder="ex: djokangoma@gmail"
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 pl-4"
+                  placeholder=" djokangoma@gmail"
                 />
               </div>
             </div>
@@ -60,10 +60,12 @@ export default function SignIn() {
                 type="submit"
                 className="flex w-full justify-center rounded-md bg-[#b56953] px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-[#f07857] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Sign in
+                LOGIN
               </button>
             </div>
           </form>
+          
+          <h2> DON'T HAVE AN ACCOUNT ?</h2> <h2 className="text-[#b56953] hover:text-[#f07857]">REGISTER</h2> 
 
           <p className="mt-10 text-center text-sm text-[#b56953] hover:text-[#f07857]">
             Not a member?{' '}
