@@ -2,13 +2,13 @@
 
 export default function HeroSection() {
   return (
-   <div>
+   <div className="relative">
     
-     <div className="w-full">
-       <img src="https://i.ibb.co/34xMXZn/hero-img.jpg" alt="hero-image" /> 
+     <div >
+       <img src="https://i.ibb.co/34xMXZn/hero-img.jpg" alt="hero-image"  className="w-full h-49"  /> 
       </div>
 
-      <div className="flex justify-between  w-30px h-28 bg-[#FAF9F5] ">
+      <div className="flex  justify-around w-11/12 h-28 bg-[#FAF9F5] absolute bottom-0 ">
         
         <div>
           <h2>PLACE</h2>

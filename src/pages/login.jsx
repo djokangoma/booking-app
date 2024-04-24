@@ -1,4 +1,3 @@
-
 export default function Login() {
   return (
     <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
@@ -69,7 +68,7 @@ export default function Login() {
             </div>
           </form>
           
-          <h2> DON'T HAVE AN ACCOUNT ?</h2> 
+          <h2> DONT HAVE AN ACCOUNT ?</h2> 
           <h2 className="text-[#b56953] hover:text-[#f07857]"><link to="/REGISTER">REGISTER</link></h2>
         </div>
       </div>
