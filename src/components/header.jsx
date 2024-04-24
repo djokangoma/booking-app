@@ -15,7 +15,7 @@ export default function Header() {
       </div>
 
       <div className="">
-      <button className="hover:text-[#b56953]"> <Link to="/login"> LOGIN </Link></button>
+       <Link to="/login"> LOGIN </Link>
       </div>
      </header>
   )
