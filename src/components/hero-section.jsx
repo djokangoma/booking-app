@@ -20,14 +20,10 @@ export default function HeroSection() {
           <FaBed className="absolute bottom-14 right-2 " />
         </div>
 
-        <div>
+        <div className="relative  ">
           <h2 className="text-center">DATE</h2>
-          <input
-            type="text"
-            className="mt-1 px-3 py-2 bg-white border shadow-sm border-black-300 placeholder-black- focus:outline-none focus:border-[#000] focus:ring-[#000] block w-full rounded-md sm:text-sm focus:ring-1"
-            placeholder="where are you going?"
-          />
-          {/* <span>date to date</span> */}
+          <div className="mt-1 px-3 py-2 bg-white border shadow-sm bordel-black-300 h-10 w-28 rounded-md "></div>
+          <span className="absolute bottom-14 ">date </span>
         </div>
         <div>
           <h2 className="text-center">ROOMS</h2>

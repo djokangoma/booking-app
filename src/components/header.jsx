@@ -7,28 +7,28 @@ export default function Header() {
       <div>
         <h2 className="flex">
           {" "}
-          <FaHotel className="text-[#b56953] size-8 " /> DJO
+          <FaHotel className="text-[#f07857]  size-8 " />
         </h2>
       </div>
 
       <div className="flex gap-5 list-none  ">
         <NavLink to="/">
           {" "}
-          <li className="hover:text-[#b56953]">HOME</li>
+          <li className="hover:text-[#f07857]">HOME</li>
         </NavLink>
         <NavLink to="/about">
-          <li className="hover:text-[#b56953]">ABOUT US</li>
+          <li className="hover:text-[#f07857]">ABOUT US</li>
         </NavLink>
         <NavLink to="/hotels">
           {" "}
-          <li className="hover:text-[#b56953]">HOTELS</li>
+          <li className="hover:text-[#f07857]">HOTELS</li>
         </NavLink>
         <NavLink to="/contact">
-          <li className="hover:text-[#b56953]"> CONTACT</li>
+          <li className="hover:text-[#f07857]"> CONTACT</li>
         </NavLink>
       </div>
 
-      <div className="">
+      <div className=" hover:text-[#f07857]">
         <Link to="/login"> LOGIN </Link>
       </div>
     </header>

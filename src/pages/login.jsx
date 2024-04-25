@@ -3,11 +3,8 @@ import { useForm } from "react-hook-form";
 
 export default function Login() {
   const [formData, setFormData] = useState({
-    name: "",
-    phone: "",
     email: "",
-    age: 18,
-    gender: "",
+    password: "",
   });
 
   const {
@@ -25,91 +22,61 @@ export default function Login() {
   //   ('$formData.gender==="femme"? "enregistrée":"enregistré"');
   // }
   return (
-    <div className="flex flex-col p-5  bg-blue-500 w-80 h-90 rounded-md  ml-64 mt-40">
+    <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8 ">
       <div>
-        <h1 className="text-2xl font-semibold text-center text-white ">
-          contact form
-        </h1>
+        <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
+          Sign in to your account
+        </h2>
       </div>
       <div>
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
           <div>
-            <label className="text-white">Name</label>
-            <input
-              className="bg-pink-50 rounded-full mb-4 ml-12 mt-4 pl-2"
-              type="text"
-              name="name"
-              {...register("name", {
-                required: "ce champ est obligatoire",
-              })}
-            />
-            {errors.name && (
-              <span style={{ color: "red" }}>{errors.name.message}</span>
-            )}
+            <label className=" block text-sm font-medium leading-6 text-gray-900">
+              Email address
+            </label>
+            <div className="mt-2">
+              <input
+                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                type="email"
+                name="email"
+                {...register("email", { required: "ce champ est obligatoire" })}
+              />
+              {errors.phone && (
+                <span style={{ color: "red" }}>{errors.email.message}</span>
+              )}
+            </div>
           </div>
 
           <div>
-            <label className="text-white">Telephone</label>
-            <input
-              className="bg-pink-50 rounded-full mb-4 ml-4 pl-2"
-              type="text"
-              name="phone"
-              {...register("phone", {
-                required: "ce champ est obligatoire",
-                pattern: {
-                  value: /^[0-9]{10}$/i,
-                  message: "ce champ n'est pas au bon format",
-                },
-              })}
-            />
-            {errors.phone && (
-              <span style={{ color: "red" }}>{errors.phone.message}</span>
-            )}
+            <label className="block text-sm font-medium leading-6 text-gray-900">
+              Password
+            </label>
+            <div className="mt-2">
+              <input
+                className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                type="password"
+                name="password"
+                {...register("password", {
+                  required: "ce champ est obligatoire",
+                })}
+              />
+              {errors.phone && (
+                <span style={{ color: "red" }}>{errors.password.message}</span>
+              )}
+            </div>
           </div>
 
-          <div>
-            <label className="text-white">Email</label>
-            <input
-              className="bg-pink-50 rounded-full mb-4 ml-12 pl-2"
-              type="email"
-              name="email"
-              {...register("email", { required: "ce champ est obligatoire" })}
-            />
-            {errors.phone && (
-              <span style={{ color: "red" }}>{errors.email.message}</span>
-            )}
-          </div>
-
-          <div>
-            <label className="text-white">Age</label>
-            <input
-              className="bg-pink-50 rounded-full mb-4 ml-14 pl-2"
-              type="number"
-              name="age"
-              {...register("age", { required: "ce champ est obligatoire" })}
-            />
-            {errors.phone && (
-              <span style={{ color: "red" }}>{errors.email.message}</span>
-            )}
-          </div>
-
-          <div>
-            <label className="text-white">Genre</label>
-            <select
-              {...register("name")}
-              className="bg-pink-50 rounded-full mb-4 ml-11 w-46 pl-2"
-            >
-              <option value="Homme">Homme</option>
-              <option value="Femme">Femme</option>
-              <option value="Autre">Autre</option>
-            </select>
-          </div>
           <button
-            className="bg-pink-500 p-4 rounded-full ml-20 text-center  text-white"
+            className="flex w-full justify-center rounded-md bg-[#f07857] px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             type="submit"
           >
-            Enregistrer
+            Sign in
           </button>
+          <div className="my-4 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-neutral-300 after:mt-0.5 after:flex-1 after:border-t after:border-neutral-300 dark:before:border-neutral-500 dark:after:border-neutral-500">
+            <p className="mx-4 mb-0 text-center font-semibold dark:text-neutral-200">
+              OR
+            </p>
+          </div>
         </form>
       </div>
     </div>
