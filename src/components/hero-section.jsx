@@ -1,6 +1,20 @@
 import { FaBed } from "react-icons/fa";
+import { FaRegCalendarAlt } from "react-icons/fa";
+import { DateRange } from "react-date-range";
+import { useState } from "react";
+import 'react-date-range/dist/styles.css'; // main css file
+import 'react-date-range/dist/theme/default.css'; // theme css file
+
 
 export default function HeroSection() {
+  const [date, setDate] = useState([
+    {
+      startDate: new Date(),
+      endDate: null,
+      key: "selection",
+    },
+  ]);
+
   return (
     <div className="relative flex items-end justify-center">
       <img
@@ -20,11 +34,20 @@ export default function HeroSection() {
           <FaBed className="absolute bottom-14 right-2 " />
         </div>
 
-        <div className="relative  ">
+        <div>
           <h2 className="text-center">DATE</h2>
-          <div className="mt-1 px-3 py-2 bg-white border shadow-sm bordel-black-300 h-10 w-28 rounded-md "></div>
-          <span className="absolute bottom-14 ">date </span>
+          <div className="relative mt-1 px-3 py-2 bg-white border shadow-sm bordel-black-300 h-10 w-52 cursor-pointer ">
+            <FaRegCalendarAlt className="absolute  right-2 " />
+            <span className="absolute bottom-2 ">date to date </span>
+            <DateRange
+              editableDateInputs={true}
+              onChange={(item) => setDate([item.selection])}
+              moveRangeOnFirstSelection={false}
+              ranges={date}
+            />
+          </div>
         </div>
+
         <div>
           <h2 className="text-center">ROOMS</h2>
           <input

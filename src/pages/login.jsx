@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { FcGoogle } from "react-icons/fc";
@@ -42,7 +43,7 @@ export default function Login() {
                 name="email"
                 {...register("email", { required: "ce champ est obligatoire" })}
               />
-              {errors.phone && (
+              {errors.email && (
                 <span style={{ color: "red" }}>{errors.email.message}</span>
               )}
             </div>

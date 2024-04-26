@@ -1,11 +1,13 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 
-export default function Register() {
+export default function Login() {
   const [formData, setFormData] = useState({
     email: "",
     password: "",
+    ConfirmPassword:""
   });
 
   const {
@@ -15,9 +17,10 @@ export default function Register() {
   } = useForm({ defaultValues: formData });
 
   const onSubmit = (data) => {
-    console.log(data);
+    if (formData.password === formData.ConfirmPassword) {
+      console.log(data);
+    }
     data.preventDefault();
-    alert("${data.email} a été enregistré");
   };
 
   return (
@@ -40,7 +43,7 @@ export default function Register() {
                 name="email"
                 {...register("email", { required: "ce champ est obligatoire" })}
               />
-              {errors.phone && (
+              {errors.email && (
                 <span style={{ color: "red" }}>{errors.email.message}</span>
               )}
             </div>
@@ -55,27 +58,33 @@ export default function Register() {
                 className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 type="password"
                 name="password"
-                placeholder="password"
                 {...register("password", {
                   required: "ce champ est obligatoire",
                 })}
               />
-              {errors.phone && (
+              {errors.password && (
                 <span style={{ color: "red" }}>{errors.password.message}</span>
               )}
             </div>
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium leading-6 text-gray-900">
+              Confirm Password
+            </label>
             <div className="mt-2">
               <input
                 className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 type="password"
-                name="password"
-                placeholder="confirm your password"
-                {...register("password", {
+                name="ConfirmPassword"
+                {...register("ConfirmPassword", {
                   required: "ce champ est obligatoire",
                 })}
               />
-              {errors.phone && (
-                <span style={{ color: "red" }}>{errors.password.message}</span>
+              {errors.ConfirmPassword && (
+                <span style={{ color: "red" }}>
+                  {errors.ConfirmPassword.message}
+                </span>
               )}
             </div>
           </div>
@@ -84,12 +93,12 @@ export default function Register() {
             className="flex w-full justify-center rounded-md bg-[#f07857] px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             type="submit"
           >
-            Create user
+            Create a User
           </button>
 
           <div className="flex gap-5  ">
             <p className="mb-0 mt-2 pt-1 text-sm font-semibold text-center">
-              ALREADY HAVE AN ACCOUNT?{" "}
+              HAVE ALREADY AN ACCOUNT?{" "}
             </p>
             <Link to="/login">
               <button className=" w-48 h-10 rounded-md bg-white px-3 py-1.5 text-sm font-semibold leading-6 text-black shadow-sm border border-slate-300 hover:border-indigo-30">
