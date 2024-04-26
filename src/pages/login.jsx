@@ -19,19 +19,17 @@ export default function Login() {
   const onSubmit = (data) => {
     console.log(data);
     data.preventDefault();
-    alert("${data.name} a été enregistré");
+    alert("${data.email} a été enregistré");
   };
-  // {
-  //   ('$formData.gender==="femme"? "enregistrée":"enregistré"');
-  // }
+ 
   return (
-    <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8 ">
+    <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
       <div>
         <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
           Sign in to your account
         </h2>
       </div>
-      <div>
+      <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
           <div>
             <label className=" block text-sm font-medium leading-6 text-gray-900">
@@ -76,9 +74,9 @@ export default function Login() {
             Sign in
           </button>
 
-          <div className="flex gap-5 justify-around">
+          <div className="flex gap-5  ">
             <p className="mb-0 mt-2 pt-1 text-sm font-semibold text-center">
-              Don't have an account?{" "}
+              DON'T HAVE AN ACCOUNT?{" "}
             </p>
             <Link to="/register">
               <button className=" w-48 h-10 rounded-md bg-white px-3 py-1.5 text-sm font-semibold leading-6 text-black shadow-sm border border-slate-300 hover:border-indigo-30">
