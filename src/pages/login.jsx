@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import { FcGoogle } from "react-icons/fc";
+import { FaXTwitter } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 export default function Login() {
   const [formData, setFormData] = useState({
@@ -72,10 +75,36 @@ export default function Login() {
           >
             Sign in
           </button>
+
+          <div className="flex gap-5 justify-around">
+            <p className="mb-0 mt-2 pt-1 text-sm font-semibold text-center">
+              Don't have an account?{" "}
+            </p>
+            <Link to="/register">
+              <button className=" w-48 h-10 rounded-md bg-white px-3 py-1.5 text-sm font-semibold leading-6 text-black shadow-sm border border-slate-300 hover:border-indigo-30">
+                Register
+              </button>
+            </Link>
+          </div>
+
           <div className="my-4 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-neutral-300 after:mt-0.5 after:flex-1 after:border-t after:border-neutral-300 dark:before:border-neutral-500 dark:after:border-neutral-500">
             <p className="mx-4 mb-0 text-center font-semibold dark:text-neutral-200">
-              OR
+              Or Continue with
             </p>
+          </div>
+          <div className="flex gap-5 justify-around">
+            <div className=" relative ">
+              <button className=" flex w-48 h-10 justify-center rounded-md bg-white px-3 py-1.5 text-sm font-semibold leading-6 text-black shadow-sm border border-slate-300 hover:border-indigo-30">
+                Google
+              </button>
+              <FcGoogle className="absolute top-2 left-11 size-5 " />
+            </div>
+            <div className=" relative ">
+              <button className="flex w-48 h-10 justify-center rounded-md bg-white px-3 py-1.5 text-sm font-semibold leading-6 text-black shadow-sm border border-slate-300 hover:border-indigo-30">
+                twitter
+              </button>
+              <FaXTwitter className="absolute top-2 left-11 size-5" />
+            </div>
           </div>
         </form>
       </div>
