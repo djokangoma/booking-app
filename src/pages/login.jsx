@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import { FcGoogle } from "react-icons/fc";
 import { FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import { toast } from "react-hot-toast";
 
 export default function Login() {
   const [formData, setFormData] = useState({
@@ -19,10 +20,10 @@ export default function Login() {
 
   const onSubmit = (data) => {
     console.log(data);
+    toast.success("you are connected !");
     data.preventDefault();
-    alert("${data.email} a été enregistré");
   };
- 
+
   return (
     <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
       <div>

@@ -2,12 +2,13 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
+import { toast } from "react-hot-toast";
 
 export default function Login() {
   const [formData, setFormData] = useState({
     email: "",
     password: "",
-    ConfirmPassword:""
+    ConfirmPassword: "",
   });
 
   const {
@@ -19,6 +20,7 @@ export default function Login() {
   const onSubmit = (data) => {
     if (formData.password === formData.ConfirmPassword) {
       console.log(data);
+      toast.success("User is added !");
     }
     data.preventDefault();
   };

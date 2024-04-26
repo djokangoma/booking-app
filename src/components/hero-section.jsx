@@ -2,15 +2,16 @@ import { FaBed } from "react-icons/fa";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { DateRange } from "react-date-range";
 import { useState } from "react";
-import 'react-date-range/dist/styles.css'; // main css file
-import 'react-date-range/dist/theme/default.css'; // theme css file
-
+import "react-date-range/dist/styles.css";
+import "react-date-range/dist/theme/default.css";
+import { format } from "date-fns";
 
 export default function HeroSection() {
+  const [openDate, setOpenDate]= useState(false);
   const [date, setDate] = useState([
     {
       startDate: new Date(),
-      endDate: null,
+      endDate: new Date(),
       key: "selection",
     },
   ]);
@@ -36,15 +37,19 @@ export default function HeroSection() {
 
         <div>
           <h2 className="text-center">DATE</h2>
-          <div className="relative mt-1 px-3 py-2 bg-white border shadow-sm bordel-black-300 h-10 w-52 cursor-pointer ">
+          <div className="relative mt-1 px-3 py-2 bg-white border shadow-sm bordel-black-300 h-10 w-60 cursor-pointer ">
             <FaRegCalendarAlt className="absolute  right-2 " />
-            <span className="absolute bottom-2 ">date to date </span>
-            <DateRange
+            <span onClick={()=>setOpenDate(!openDate)} className="absolute bottom-2 ">
+              {`${format(date[0].startDate, "MM/dd/yyyy")} 
+              to ${format( date[0].endDate, "MM/dd/yyyy" )}`}
+            </span>
+            {openDate && <DateRange
               editableDateInputs={true}
               onChange={(item) => setDate([item.selection])}
               moveRangeOnFirstSelection={false}
               ranges={date}
-            />
+              className="absolute top-8 left-0"
+            />}
           </div>
         </div>
 

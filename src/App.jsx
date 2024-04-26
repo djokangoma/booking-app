@@ -8,6 +8,7 @@ import Login from './pages/login.jsx'
 import About from './pages/about.jsx'
 import Hotels from './pages/hotels.jsx'
 import Register from './pages/register.jsx'
+// import { Toaster } from "react-hot-toast";
 
 
 function App(){
