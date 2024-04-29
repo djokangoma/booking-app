@@ -1,0 +1,74 @@
+{
+  "hotels": [
+    {
+        "id": "1",
+        "hotelImg": "",
+        "hotelName": "Hotel Golf Coast",
+        "hotelPlace": "Knshasa",
+        "hotelAdress": "Situé à Kinshasa, à 6,6 km du musée Mbatu, l'Hotel Golf Coast propose des hébergements avec une salle de sport, un parking privé gratuit, un bar et un restaurant." 
+    },
+    {
+        "id": "2",
+        "hotelImg": "",
+        "hotelName": "Ixoras Hotel Victoire",
+        "hotelPlace": "Knshasa",
+        "hotelAdress": "Situé à Kinshasa, à 10 km du musée Mbatu, l'Ixoras Hotel Victoire propose un restaurant, un parking privé gratuit et un bar." 
+    },
+    {
+        "id": "3",
+        "hotelImg": "",
+        "hotelName": "Hilton Kinshasa",
+        "hotelPlace": "Knshasa",
+        "hotelAdress": "Situé à Kinshasa, le Hilton Kinshasa possède une salle de sport, une terrasse, un restaurant et un bar. Cet hôtel 4 étoiles dispose d'un distributeur automatique de billets et d'un centre d'affaires." 
+    },
+    {
+        "id": "4",
+        "hotelImg": "",
+        "hotelName": "Hotel Memling",
+        "hotelPlace": "Knshasa",
+        "hotelAdress": "Situé à Kinshasa, à 10 minutes du musée national, l'Hotel Memling dispose d'une piscine extérieure, d'une terrasse bien exposée ainsi que d'une salle de sport." 
+    },
+    {
+        "id": "5",
+        "hotelImg": "",
+        "hotelName": "Hotel Royal Kinshasa",
+        "hotelPlace": "Knshasa",
+        "hotelAdress": "Situé à Kinshasa, à 400 mètres de l'ambassade d'Afrique du Sud, l'Hotel Royal Kinshasa est pourvu d'une salle de sport, d'une réception ouverte 24h/24, d'un restaurant et d'une terrasse." 
+    },
+    {
+        "id": "6",
+        "hotelImg": "",
+        "hotelName": "Pullman Kinshasa Grand Hotel",
+        "hotelPlace": "Knshasa",
+        "hotelAdress": "Offrant une vue magnifique sur le fleuve Congo, le Pullman Kinshasa Grand Hotel est un établissement 5 étoiles situé dans le quartier de Gombe à Kinshasa." 
+    },
+    {
+        "id": "7",
+        "hotelImg": "",
+        "hotelName": "Fleuve Congo Hotel By Blazon",
+        "hotelPlace": "Knshasa",
+        "hotelAdress": "Doté d'une connexion Wi-Fi gratuite, d'un court de tennis et d'une piscine extérieure ouverte toute l'année, le Fleuve Congo Hotel by Blazon Hotels est situé à Kinshasa, à 9 minutes de la galerie la..." 
+    },
+    {
+        "id": "8",
+        "hotelImg": "",
+        "hotelName": "Kin Plaza Arjaan by Rotana",
+        "hotelPlace": "Knshasa",
+        "hotelAdress": "Situé à 400 m de l'ambassade de France à Kinshasa, le Kin Plaza Arjaan by Rotana dispose d'un restaurant, d'un bar et d'une connexion Wi-Fi gratuite dans l'ensemble de ses locaux." 
+    },
+    {
+        "id": "9",
+        "hotelImg": "",
+        "hotelName": "Hotel Lubumbashi",
+        "hotelPlace": "Lubumbashi",
+        "hotelAdress": "Doté d'une piscine, d'un jardin, d'un parking accessible aux personnes à mobilité réduite et d'une connexion Wi-Fi gratuite, l'Hotel Lubumbashi se trouve à Lubumbashi, à 4 minutes du musée national de..." 
+    },
+    {
+        "id": "1",
+        "hotelImg": "",
+        "hotelName": "Goma Serena Hotel",
+        "hotelPlace": "Knshasa",
+        "hotelAdress": "4,2 km du centre" 
+    }
+  ]
+}
