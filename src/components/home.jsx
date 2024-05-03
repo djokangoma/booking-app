@@ -1,4 +1,4 @@
-import Hotels from "../pages/hotels";
+import Featured from "./featured"
 import HeroSection from "./hero-section";
 
 export default function Home() {
@@ -8,7 +8,7 @@ export default function Home() {
         <HeroSection />
       </div>
       <div className="gap-y-12">
-        <Hotels />
+        <Featured />
       </div>
     </div>
   );

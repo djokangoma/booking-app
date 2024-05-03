@@ -25,7 +25,7 @@ export default function HeroSection() {
     room: 1,
   });
 
-  const navigate = useNavigate();
+ 
 
   const handeleOption = (name, operation) => {
     setOptions((prev) => {
@@ -35,6 +35,8 @@ export default function HeroSection() {
       };
     });
   };
+
+  const navigate = useNavigate();
 
   const handeleSearch = () => {
     navigate("/hotels");

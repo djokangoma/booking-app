@@ -1,5 +1,5 @@
-{
-  "hotels": [
+
+   [
     {
         "id": "1",
         "hotelImg": "",
@@ -71,4 +71,3 @@
         "hotelAdress": "4,2 km du centre" 
     }
   ]
-}
