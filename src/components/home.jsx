@@ -1,4 +1,4 @@
-import Featured from "./featured"
+import Featured from "./featured";
 import HeroSection from "./hero-section";
 
 export default function Home() {
@@ -7,7 +7,7 @@ export default function Home() {
       <div className="gap-y-12">
         <HeroSection />
       </div>
-      <div className="gap-y-12">
+      <div className="my-20 flex justify-center items-center gap-28">
         <Featured />
       </div>
     </div>

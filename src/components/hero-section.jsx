@@ -9,6 +9,7 @@ import { FaPerson } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 
 export default function HeroSection() {
+  const [destination, setDestination] = useState("");
   const [openDate, setOpenDate] = useState(false);
   const [date, setDate] = useState([
     {
@@ -25,8 +26,6 @@ export default function HeroSection() {
     room: 1,
   });
 
- 
-
   const handeleOption = (name, operation) => {
     setOptions((prev) => {
       return {
@@ -39,13 +38,13 @@ export default function HeroSection() {
   const navigate = useNavigate();
 
   const handeleSearch = () => {
-    navigate("/hotels");
+    navigate("/hotels", { state: { destination, date, options } });
   };
 
   return (
     <div className="relative flex items-end justify-center">
       <img
-        src="https://i.ibb.co/34xMXZn/hero-img.jpg"
+        src="https://res.cloudinary.com/dgkxaq4lh/image/upload/v1713536449/eh2eqdfv680qqqzib8mo.jpg"
         alt="hero-image"
         className="w-full h-auto"
       />
@@ -57,13 +56,14 @@ export default function HeroSection() {
             type="text"
             className="mt-1 px-3 py-2 bg-white border shadow-sm border-black-300 placeholder-black- focus:outline-none focus:border-[#000] focus:ring-[#000] block w-full rounded-md sm:text-sm focus:ring-1 "
             placeholder="where are you going?"
+            onChange={(e) => setDestination(e.target.value)}
           />
           <FaBed className="absolute bottom-14 right-2 " />
         </div>
 
         <div>
           <h2 className="text-center">DATE</h2>
-          <div className="relative mt-1 px-3 py-2 bg-white border shadow-sm bordel-black-300 h-10 w-60 cursor-pointer ">
+          <div className="relative mt-1 px-3 py-2 bg-white border shadow-sm bordel-black-300 h-10 w-60 cursor-pointer z-20 ">
             <FaRegCalendarAlt className="absolute  right-2 " />
             <span
               onClick={() => setOpenDate(!openDate)}
@@ -79,6 +79,7 @@ export default function HeroSection() {
                 moveRangeOnFirstSelection={false}
                 ranges={date}
                 className="absolute top-8 left-0"
+                minDate={new Date()}
               />
             )}
           </div>
@@ -86,7 +87,7 @@ export default function HeroSection() {
 
         <div>
           <h2 className="text-center">GUESTS & ROOMS</h2>
-          <div className="relative mt-1 px-3 py-2 bg-white border shadow-sm bordel-black-300 h-10 w-60 cursor-pointer ">
+          <div className="relative mt-1 px-3 py-2 bg-white border shadow-sm bordel-black-300 h-10 w-60 cursor-pointer z-20 ">
             <FaPerson className="absolute right-1 " />
             <span onClick={() => setOpenOptions(!openOptions)}>
               {` ${options.adulte} adulte . ${options.children} children . ${options.room} room`}{" "}

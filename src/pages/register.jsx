@@ -5,11 +5,7 @@ import { Link } from "react-router-dom";
 import { toast } from "react-hot-toast";
 
 export default function Login() {
-  const [formData, setFormData] = useState({
-    email: "",
-    password: "",
-    ConfirmPassword: "",
-  });
+  const [formData, setFormData] = useState(null);
 
   const {
     register,
@@ -18,11 +14,16 @@ export default function Login() {
   } = useForm({ defaultValues: formData });
 
   const onSubmit = (data) => {
+    setFormData(data);
+    console.log(formData);
+    console.log(formData.passwotd);
+    console.log(formData.ConfirmPassword);
     if (formData.password === formData.ConfirmPassword) {
-      console.log(data);
       toast.success("User is added !");
+    } else {
+      toast.success("No match !");
     }
-    data.preventDefault();
+    // data.preventDefault();
   };
 
   return (
