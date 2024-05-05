@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import { toast } from "react-hot-toast";
@@ -13,17 +13,19 @@ export default function Login() {
     formState: { errors },
   } = useForm({ defaultValues: formData });
 
-  const onSubmit = (data) => {
+  const onSubmit = async (data) => {
     setFormData(data);
+    const response = await new Promise((resolve) =>
+      setTimeout(() => resolve({ success: true }), 100)
+    );
     console.log(formData);
     console.log(formData.passwotd);
     console.log(formData.ConfirmPassword);
-    if (formData.password === formData.ConfirmPassword) {
+    if (response.success && data.password === formData.ConfirmPassword) {
       toast.success("User is added !");
     } else {
-      toast.success("No match !");
+      toast.error("No match !");
     }
-    // data.preventDefault();
   };
 
   return (

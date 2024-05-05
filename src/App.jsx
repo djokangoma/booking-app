@@ -7,8 +7,6 @@ import Login from "./pages/login.jsx";
 import About from "./pages/about.jsx";
 import Hotels from "./pages/hotels.jsx";
 import Register from "./pages/register.jsx";
-import Hotel from "./components/hotel.jsx";
-
 
 function App() {
   return (
@@ -19,7 +17,6 @@ function App() {
             <Route path="/" element={<Home />}></Route>
             <Route path="/about" element={<About />}></Route>
             <Route path="/hotels" element={<Hotels />}></Route>
-            <Route path="/hotels/:id" element={<Hotel />}></Route>
             <Route path="/contact" element={<Contact />}></Route>
             <Route path="/login" element={<Login />}></Route>
             <Route path="/register" element={<Register />}></Route>

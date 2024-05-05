@@ -19,10 +19,6 @@ export default function Header() {
         <NavLink to="/about">
           <li className="hover:text-[#f07857]">ABOUT US</li>
         </NavLink>
-        <NavLink to="/hotels">
-          {" "}
-          <li className="hover:text-[#f07857]">HOTELS</li>
-        </NavLink>
         <NavLink to="/contact">
           <li className="hover:text-[#f07857]"> CONTACT</li>
         </NavLink>

@@ -2,6 +2,7 @@ import { format } from "date-fns";
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { DateRange } from "react-date-range";
+import {SearchItem} from "../components/searchItem"
 
 export default function Hotels() {
   const location = useLocation();
@@ -13,7 +14,7 @@ export default function Hotels() {
   return (
     <div className="flex justify-center mt-20 ">
       <div className="w-full max-w-5xl flex gap-20 ">
-        <div className="flex-1 bg-white p-10 rounded-xl sticky top-10">
+        <div className="flex-1 bg-[#febb02] p-1 rounded-xl sticky top-10">
           <h1 className="text-sm mb-10">Search</h1>
           <div className="flex flex-col gap-5 mb-10">
             <label className="tx-xs ">Destination</label>
@@ -49,50 +50,63 @@ export default function Hotels() {
                   <input type="number" className="lsoptioninput w-20" />
                 </span>
               </div>
-              <div className="lsoptionitm">
+              <div className="lsoptionitm flex justify-between mb-10 text-red-400 tx-xs">
                 <span className="lsoptiontext">
                   Max price <small>par night</small>
-                  <input type="number" className="lsoptioninput" />
+                  <input type="number" className="lsoptioninput  w-20" />
                 </span>
               </div>
-              <div className="lsoptionitm">
+              <div className="lsoptionitm flex justify-between mb-10 text-red-400 tx-xs">
                 <span className="lsoptiontext">
                   Adult
                   <input
                     type="number"
                     min={1}
-                    className="lsoptioninput"
+                    className="lsoptioninput  w-20"
                     placeholder={options.adulte}
                   />
                 </span>
               </div>
-              <div className="lsoptionitm">
+              <div className="lsoptionitm flex justify-between mb-10 text-red-400 tx-xs">
                 <span className="lsoptiontext">
                   Children
                   <input
                     type="number"
                     min={0}
-                    className="lsoptioninput"
+                    className="lsoptioninput  w-20"
                     placeholder={options.children}
                   />
                 </span>
               </div>
-              <div className="lsoptionitm">
+              <div className="lsoptionitm flex justify-between mb-10 text-red-400 tx-xs">
                 <span className="lsoptiontext">
                   Room
                   <input
                     type="number"
                     min={1}
-                    className="lsoptioninput"
+                    className="lsoptioninput w-20 "
                     placeholder={options.room}
                   />
                 </span>
               </div>
             </div>
           </div>
-          <div className="bg-[#f07857] p-10 text-white border-none w-full font-medium cursor-pointer"> Search</div>
+          <div className="bg-[#f07857] p-10 text-white border-none w-full font-medium cursor-pointer">
+            {" "}
+            Search
+          </div>
         </div>
-        <div className="flex-3"></div>
+        <div className="flex-3">
+          <SearchItem/>
+          <SearchItem/>
+          <SearchItem/>
+          <SearchItem/>
+          <SearchItem/>
+          <SearchItem/>
+          <SearchItem/>
+          <SearchItem/>
+          <SearchItem/>
+        </div>
       </div>
     </div>
   );
