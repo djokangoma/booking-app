@@ -2,7 +2,6 @@ import { format } from "date-fns";
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { DateRange } from "react-date-range";
-import {SearchItem} from "../components/searchItem"
 
 export default function Hotels() {
   const location = useLocation();
@@ -97,15 +96,6 @@ export default function Hotels() {
           </div>
         </div>
         <div className="flex-3">
-          <SearchItem/>
-          <SearchItem/>
-          <SearchItem/>
-          <SearchItem/>
-          <SearchItem/>
-          <SearchItem/>
-          <SearchItem/>
-          <SearchItem/>
-          <SearchItem/>
         </div>
       </div>
     </div>
