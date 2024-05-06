@@ -1,4 +1,3 @@
-import Featured from "./featured";
 import FeaturedProperties from "./featuredProperties";
 import HeroSection from "./hero-section";
 
@@ -9,9 +8,8 @@ export default function Home() {
         <HeroSection />
       </div>
       <div className="my-20 flex justify-center items-center gap-28">
-        <Featured />
+        <FeaturedProperties />
       </div>
-      <FeaturedProperties/>
     </div>
   );
 }

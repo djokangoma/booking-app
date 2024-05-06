@@ -7,7 +7,10 @@ export default function Header() {
       <div>
         <h2 className="flex">
           {" "}
-          <FaHotel className="text-[#f07857]  size-8 " />
+          <Link to="/">
+            {" "}
+            <FaHotel className="text-[#f07857]  size-8 " />
+          </Link>
         </h2>
       </div>
 
