@@ -28,7 +28,7 @@ export default function Featured() {
 
       <div className="relative text-white rounded-md overflow-hidden">
         <img
-          src="https://i.ibb.co/bLfzkNn/t-l-chargement.jpg"
+          src="https://res.cloudinary.com/dgkxaq4lh/image/upload/v1715091786/pexels-photo-169647_hmywza.jpg"
           alt="ville de bandundu"
           className="w-full object-cover h-96"
         />

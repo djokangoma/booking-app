@@ -14,7 +14,7 @@ export default function Hotels() {
   return (
     <div className="flex justify-center mt-20 mb-20">
       <div className="w-full max-w-5xl flex gap-20 ">
-        <div className="flex-1 bg-[#F07857] p-1 rounded-xl sticky top-10 ">
+        <div className=" listSearch flex-1 bg-[#F07857] p-1 rounded-xl sticky top-10  ">
           <h1 className="text-sm mb-10 text-[#FAF9F5] ">Search</h1>
           <div className="flex flex-col gap-1 mb-1">
             <label className="tx-xs text-[#FAF9F5] ">Destination</label>
@@ -99,15 +99,15 @@ export default function Hotels() {
           </div>
         </div>
         <div className="flex-3">
-          <SearchItem/>
-          <SearchItem/>
-          <SearchItem/>
-          <SearchItem/>
-          <SearchItem/>
-          <SearchItem/>
-          <SearchItem/>
-          <SearchItem/>
-          <SearchItem/>
+          <SearchItem />
+          <SearchItem />
+          <SearchItem />
+          <SearchItem />
+          <SearchItem />
+          <SearchItem />
+          <SearchItem />
+          <SearchItem />
+          <SearchItem />
         </div>
       </div>
     </div>
