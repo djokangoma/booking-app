@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { FcGoogle } from "react-icons/fc";
@@ -21,7 +20,7 @@ export default function Login() {
   const onSubmit = (data) => {
     console.log(data);
     toast.success("you are connected !");
-    data.preventDefault();
+    // data.preventDefault(); // Il n'est pas nécessaire d'appeler preventDefault() dans React
   };
 
   return (
@@ -31,10 +30,10 @@ export default function Login() {
           Sign in to your account
         </h2>
       </div>
-      <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+      <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-md">
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
           <div>
-            <label className=" block text-sm font-medium leading-6 text-gray-900">
+            <label className="block text-sm font-medium leading-6 text-gray-900">
               Email address
             </label>
             <div className="mt-2">
@@ -76,12 +75,12 @@ export default function Login() {
             Sign in
           </button>
 
-          <div className="flex gap-5  ">
-            <p className="mb-0 mt-2 pt-1 text-sm font-semibold text-center">
+          <div className="flex flex-col items-center sm:flex-row gap-5">
+            <p className="mb-2 mt-2 text-sm font-semibold text-center sm:mt-0">
               DON'T HAVE AN ACCOUNT?{" "}
             </p>
             <Link to="/register">
-              <button className=" w-48 h-10 rounded-md bg-white px-3 py-1.5 text-sm font-semibold leading-6 text-black shadow-sm border border-slate-300 hover:border-indigo-30">
+              <button className="w-full sm:w-auto h-10 rounded-md bg-white px-3 py-1.5 text-sm font-semibold leading-6 text-black shadow-sm border border-slate-300 hover:border-indigo-30">
                 Register
               </button>
             </Link>
@@ -93,14 +92,14 @@ export default function Login() {
             </p>
           </div>
           <div className="flex gap-5 justify-around">
-            <div className=" relative ">
-              <button className=" flex w-48 h-10 justify-center rounded-md bg-white px-3 py-1.5 text-sm font-semibold leading-6 text-black shadow-sm border border-slate-300 hover:border-indigo-30">
+            <div className="relative">
+              <button className="flex w-full justify-center rounded-md bg-white px-3 py-1.5 text-sm font-semibold leading-6 text-black shadow-sm border border-slate-300 hover:border-indigo-30">
                 Google
               </button>
-              <FcGoogle className="absolute top-2 left-11 size-5 " />
+              <FcGoogle className="absolute top-2 left-11 size-5" />
             </div>
-            <div className=" relative ">
-              <button className="flex w-48 h-10 justify-center rounded-md bg-white px-3 py-1.5 text-sm font-semibold leading-6 text-black shadow-sm border border-slate-300 hover:border-indigo-30">
+            <div className="relative">
+              <button className="flex w-full justify-center rounded-md bg-white px-3 py-1.5 text-sm font-semibold leading-6 text-black shadow-sm border border-slate-300 hover:border-indigo-30">
                 twitter
               </button>
               <FaXTwitter className="absolute top-2 left-11 size-5" />
