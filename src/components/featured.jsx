@@ -5,7 +5,7 @@ export default function Featured() {
         <img
           src="https://res.cloudinary.com/dgkxaq4lh/image/upload/v1714762152/pexels-photo-7052280_xuhuzr.jpg"
           alt="vile de kinshasa"
-          className="w-full object-cover h-96"
+          className="w-full object-cover h-96 "
         />
         <div className="absolute bottom-10  left-10 ">
           <h2>Kinshasa</h2>

@@ -101,7 +101,7 @@ export default function Login() {
             <div className="relative">
               <button className="flex w-full justify-center rounded-md bg-white px-3 py-1.5 text-sm font-semibold leading-6 text-black shadow-sm border border-slate-300 hover:border-indigo-30">
                 twitter
-              </button>
+              </button>ww
               <FaXTwitter className="absolute top-2 left-11 size-5" />
             </div>
           </div>

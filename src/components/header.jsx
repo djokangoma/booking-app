@@ -1,5 +1,8 @@
 import { NavLink, Link } from "react-router-dom";
 import { FaHotel } from "react-icons/fa";
+import { IoIosCloseCircle } from "react-icons/io";
+import { TbGridDots } from "react-icons/tb";
+
 
 export default function Header() {
   return (
@@ -14,7 +17,7 @@ export default function Header() {
         </h2>
       </div>
 
-      <div className="flex gap-5 list-none  ">
+      <div className="navBar flex gap-5 list-none  ">
         <NavLink to="/">
           {" "}
           <li className="hover:text-[#f07857]">HOME</li>
@@ -28,7 +31,16 @@ export default function Header() {
       </div>
 
       <div className=" hover:text-[#f07857]">
-        <Link to="/login"> LOGIN </Link>
+        <Link to="/login">
+          {" "}
+          <button className="bg-[#f07857] text-white p-1 border-none rounded-md ">
+            LOGIN
+          </button>{" "}
+        </Link>
+      </div>
+      <div>
+        <IoIosCloseCircle />
+        <TbGridDots />
       </div>
     </header>
   );
