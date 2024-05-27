@@ -49,7 +49,7 @@ export default function HeroSection() {
         className="w-full h-auto"
       />
 
-      <div className="flex content-center item-center justify-around w-11/12 h-28 bg-[#FAF9F5] absolute -bottom-10  rounded-md ">
+      <div className="flex content-center item-center justify-around w-11/12 h-28 bg-[#faf9f5] absolute -bottom-10  rounded-md ">
         <div className="relative">
           <h2 className="text-center">PLACE</h2>
           <input
