@@ -42,15 +42,15 @@ export default function HeroSection() {
   };
 
   return (
-    <div className="relative flex items-end justify-center">
+    <div className="imageBg relative flex items-end justify-center">
       <img
         src="https://res.cloudinary.com/dgkxaq4lh/image/upload/v1713536449/eh2eqdfv680qqqzib8mo.jpg"
         alt="hero-image"
         className="w-full h-auto"
       />
 
-      <div className="flex content-center item-center justify-around w-11/12 h-28 bg-[#faf9f5] absolute -bottom-10  rounded-md ">
-        <div className="relative">
+      <div className="heroSection flex content-center item-center justify-around w-11/12 h-28 bg-[#faf9f5] absolute -bottom-10  rounded-md ">
+        <div className="cardReservation relative">
           <h2 className="text-center">PLACE</h2>
           <input
             type="text"
@@ -161,7 +161,7 @@ export default function HeroSection() {
 
         <div className="mt-5">
           <button
-            className="mt-1 px-3 py-2 bg-[#f07857] text-white border shadow-sm bordel-black-300 block w-full rounded-md "
+            className="bookNow mt-1 px-3 py-2 bg-[#f07857] text-white border shadow-sm bordel-black-300 block w-full rounded-md "
             onClick={handeleSearch}
           >
             BOOK NOW
