@@ -40,4 +40,65 @@
   .activeNavBar {
     left: 0;
   }
+  .imageBg {
+    position: relative;
+  }
+  .heroSection {
+    display: flex;
+    position: absolute;
+    width: 80%;
+    bottom: -13rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+  }
+  .cardReservation {
+    position: relative;
+  }
+  .bookNow {
+    margin: 1rem;
+  }
+  .faBed {
+    right: 1rem;
+    bottom: 0.5rem;
+  }
+
+  .futured {
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .featuredImage {
+    margin: 0 2rem;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .FooterContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .FooterPayement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .FooterPayement p {
+    align-items: center;
+  }
+  .FooterSocial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .FooterSocial p {
+    text-align: center;
+  }
 }

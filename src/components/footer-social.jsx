@@ -1,6 +1,6 @@
 export default function FooterSocial() {
   return (
-    <div>
+    <div className="FooterSocial">
       <div>
         <h2 className="text-[#000] font-medium text-center ">Get Social</h2>
         <p className=" text-xs  text-[#4d4d4d] m-4 ">

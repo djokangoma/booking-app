@@ -5,7 +5,7 @@ import FooterSocial from "./footer-social";
 
 export default function Footer() {
   return (
-    <div className="flex justify-between bg-[#faf9f5] ">
+    <div className="footer flex justify-between bg-[#faf9f5] ">
         <FooterAbout/>
         <FooterContact/>
         <FooterPayement/>

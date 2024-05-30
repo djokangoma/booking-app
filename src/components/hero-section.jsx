@@ -58,7 +58,7 @@ export default function HeroSection() {
             placeholder="where are you going?"
             onChange={(e) => setDestination(e.target.value)}
           />
-          <FaBed className="absolute bottom-14 right-2 " />
+          <FaBed className="faBed absolute bottom-14 right-2 " />
         </div>
 
         <div>

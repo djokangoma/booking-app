@@ -7,7 +7,7 @@ import { Toaster } from "react-hot-toast";
 export default function Layout() {
   return (
     <div>
-      <Header />
+      <Header/>
       <Toaster position="top-center" reverseOrder={false} />
       <Outlet />
       <Footer />

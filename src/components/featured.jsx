@@ -1,7 +1,7 @@
 export default function Featured() {
   return (
-    <div className="w-full max-w-screen-lg flex justify-between gap-20 z-1 ">
-      <div className="relative text-white rounded-md overflow-hidden  ">
+    <div className="futured w-full max-w-screen-lg flex justify-between gap-20 z-1 ">
+      <div className="featuredImage relative text-white rounded-md overflow-hidden  ">
         <img
           src="https://res.cloudinary.com/dgkxaq4lh/image/upload/v1714762152/pexels-photo-7052280_xuhuzr.jpg"
           alt="vile de kinshasa"
@@ -13,7 +13,7 @@ export default function Featured() {
         </div>
       </div>
 
-      <div className="relative text-white rounded-md overflow-hidden ">
+      <div className="featuredImage relative text-white rounded-md overflow-hidden ">
         <img
           src="https://res.cloudinary.com/dgkxaq4lh/image/upload/v1714813679/OIP_da7vow.jpg"
           alt="ville de Lubumbashi"
@@ -26,7 +26,7 @@ export default function Featured() {
         </div>
       </div>
 
-      <div className="relative text-white rounded-md overflow-hidden">
+      <div className="featuredImage relative text-white rounded-md overflow-hidden">
         <img
           src="https://res.cloudinary.com/dgkxaq4lh/image/upload/v1715091786/pexels-photo-169647_hmywza.jpg"
           alt="ville de bandundu"
