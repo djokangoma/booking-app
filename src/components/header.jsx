@@ -42,20 +42,11 @@ export default function Header() {
               </button>
             </Link>
           </div>
-        </div>
-        <div onClick={removeNav}>
-          <IoIosCloseCircle className="closeBar  size-8 text-[#f07857] cursor-pointer " />
+          <div onClick={removeNav}>
+            <IoIosCloseCircle className="closeBar  size-8 text-[#f07857] cursor-pointer " />
+          </div>
         </div>
       </div>
-
-      {/* <div className=" hover:text-[#f07857]">
-          <Link to="/login">
-            {" "}
-            <button className="bg-[#f07857] text-white p-1 border-none rounded-md ">
-              LOGIN
-            </button>{" "}
-          </Link>
-        </div> */}
 
       <div onClick={showNav} className="toggleNavbar">
         <TbGridDots className="activeNavBar size-8 text-[#f07857] cursor-pointer" />
