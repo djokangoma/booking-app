@@ -93,16 +93,15 @@ export default function Login() {
           </div>
           <div className="flex gap-5 justify-around">
             <div className="relative">
-              <button className="flex w-full justify-center rounded-md bg-white px-3 py-1.5 text-sm font-semibold leading-6 text-black shadow-sm border border-slate-300 hover:border-indigo-30">
-                Google
+              <button className="btnGoogle flex w-full justify-center items-center rounded-md bg-white px-3 py-1.5 text-sm font-semibold leading-6 text-black shadow-sm border border-slate-300 hover:border-indigo-30">
+                Google <FcGoogle className="FcGoogle " />
               </button>
-              <FcGoogle className="FcGoogle absolute top-2 left-11 size-5" />
             </div>
             <div className="relative">
-              <button className="flex w-full justify-center rounded-md bg-white px-3 py-1.5 text-sm font-semibold leading-6 text-black shadow-sm border border-slate-300 hover:border-indigo-30">
+              <button className="btnTwitter flex w-full justify-center items-center rounded-md bg-white px-3 py-1.5 text-sm font-semibold leading-6 text-black shadow-sm border border-slate-300 hover:border-indigo-30">
                 twitter
+                <FaXTwitter className="FaXTwitter" />
               </button>
-              <FaXTwitter className="FaXTwitter absolute top-2 left-11 size-5" />
             </div>
           </div>
         </form>

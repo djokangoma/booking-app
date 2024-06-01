@@ -120,4 +120,11 @@
   .toggleNavbar {
     display: none;
   }
+
+  .boxOption {
+    width: 12rem;
+  }
+  .bookNow {
+    width: 8rem;
+  }
 }
