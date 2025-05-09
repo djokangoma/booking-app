@@ -1,9 +1,11 @@
-const express = require( "express");
-const app = express();
-const dotenv =require("dotenv");
-const mongoose  = require("mongoose");
-dotenv.config()
+const express = require("express");
+const authroute = require("./routes/auth");
+const mongoose = require("mongoose");
+const dontev = require("dotenv"); 
 
+dontev.config()
+
+const app = express();
 
 const  connect = async ()=>{
     try{
@@ -15,18 +17,13 @@ const  connect = async ()=>{
     }
 }
 
-mongoose.connection.on("disconnected",()=>
-console.log("mongo db disconnected")
-)
-mongoose.connection.on("connected",()=>
-console.log("mongo db connected")
-)
-app.get("/", (req,res)=>{
-    res.send("i love u joe kangoma")
-})
+    mongoose.connection.on("connected",()=>
+    console.log("mongo db connected")
+    )
 
+    app.use("/api/auth", authroute)
 
-app.listen(8800, ()=>{
+app.listen(8800,()=>{
     connect()
-    console.log("connect to backend!!")
-}) 
+    console.log("connect to backend ")
+})
